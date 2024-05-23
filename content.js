@@ -4,7 +4,7 @@ chrome.storage.local.get(null, (credentials) => {
     if (credentials[site]) {
       const { username, password } = credentials[site];
   
-      // Function to check if an element is visible on the page
+    
       const isElementVisible = (element) => {
         const rect = element.getBoundingClientRect();
         return (
@@ -17,7 +17,7 @@ chrome.storage.local.get(null, (credentials) => {
         );
       };
   
-      // Function to wait for an element to become visible
+      
       const waitForElementVisibility = (element, callback) => {
         const checkVisibility = () => {
           if (isElementVisible(element)) {
@@ -28,7 +28,7 @@ chrome.storage.local.get(null, (credentials) => {
         const interval = setInterval(checkVisibility, 100);
       };
   
-      // Autofill the form when the username and password fields become visible
+      
       waitForElementVisibility(document.body, () => {
         const usernameField = document.querySelector('input[type="email"], input[type="text"]');
         const passwordField = document.querySelector('input[type="password"]');
