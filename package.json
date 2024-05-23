@@ -1,0 +1,17 @@
+{
+  "name": "login_mate",
+  "version": "1.0.0",
+  "description": "multi_login_crome_extension",
+  "main": "background.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "ayoobbhat"
+  ],
+  "author": "ayoob",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
